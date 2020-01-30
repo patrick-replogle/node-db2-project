@@ -24,4 +24,4 @@ router.post("/", async (req, res) => {
   }
 });
 
-module.exports = cars;
+module.exports = router;
