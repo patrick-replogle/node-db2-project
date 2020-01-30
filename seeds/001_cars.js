@@ -7,7 +7,9 @@ exports.seed = async function(knex) {
       year: 2008,
       color: "red",
       price: 5999.99,
-      sold: false
+      sold: false,
+      miles: 30000,
+      vin: "1HGBH41JXMN109186"
     },
     {
       make: "Honda",
@@ -15,7 +17,9 @@ exports.seed = async function(knex) {
       year: 2012,
       color: "black",
       price: 9999.99,
-      sold: false
+      sold: false,
+      miles: 40000,
+      vin: "1HGBH41JXMN109186"
     },
     {
       make: "Suburu",
@@ -23,7 +27,9 @@ exports.seed = async function(knex) {
       year: 2015,
       color: "silver",
       price: 1200,
-      sold: false
+      sold: false,
+      miles: 60000,
+      vin: "1HGBH41JXMN109186"
     },
     {
       make: "Ford",
@@ -31,7 +37,9 @@ exports.seed = async function(knex) {
       year: 2001,
       color: "forest green",
       price: 4000,
-      sold: false
+      sold: false,
+      miles: 20000,
+      vin: "1HGBH41JXMN109186"
     }
   ]);
 };

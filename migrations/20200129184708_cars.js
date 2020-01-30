@@ -6,6 +6,8 @@ exports.up = async function(knex) {
     table.integer("year", 4).notNull();
     table.float("price", 6, 2).notNull();
     table.boolean("sold").defaultTo(false);
+    table.integer("miles", 6).notNull();
+    table.string("vin", 17).notNull();
   });
 };
 

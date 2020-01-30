@@ -30,7 +30,9 @@ router.post("/", async (req, res) => {
       model: req.body.model,
       year: req.body.year,
       price: req.body.price,
-      color: req.body.color
+      color: req.body.color,
+      vin: req.body.vin,
+      miles: req.body.miles
     };
 
     const [id] = await db("cars").insert(payload);
