@@ -8,10 +8,10 @@ const server = express();
 server.use(helmet());
 server.use(express.json());
 
+server.use("/api/cars", carsRouter);
+
 server.use("/", (req, res) => {
   res.send("<h3>Cars Cars Cars!</h3>");
 });
-
-server.use("/api/cars", carsRouter);
 
 module.exports = server;
